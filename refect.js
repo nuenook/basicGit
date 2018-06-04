@@ -1,13 +1,13 @@
 sortSchemas = (schemaObject) => {
-    var newSchemaObject = {};
-    var schemaNames = Object.keys(schemaObject);
+    let newSchemaObject = {};
+    let schemaNames = Object.keys(schemaObject);
     schemaNames.sort();
 
     //schema level
     schemaNames.forEach(eachSchema => {
         // table level
-        var newTableObject = {};        
-        var tableNames = Object.keys(schemaObject[eachSchema]);
+        let newTableObject = {};        
+        let tableNames = Object.keys(schemaObject[eachSchema]);
         tableNames.sort();
         tableNames.forEach(eachTable => {
             // if (schemaObject[eachSchema][eachTable] != undefined)
